@@ -20,7 +20,7 @@ export class CartServices {
     const products = await this.productsRepository.getProducts(new PaginationRequestDto(numberOfProducts, 0));
     const user = await this.usersRepository.getUsers(new PaginationRequestDto(1, 0));
 
-    const cartRequest = new CartRequestDto(user.data[0].id, new Date(), products.data);
+    const cartRequest = new CartRequestDto(user.data[0].id, products.data);
     return this.cartRepository.createCart(cartRequest);
   }
 } 

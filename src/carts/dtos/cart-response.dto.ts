@@ -4,7 +4,6 @@ export class CartResponseDto {
   constructor(
     public readonly id: number,
     public readonly userId: number,
-    public readonly date: string,
     public readonly products: Product[],
   ) {}
 
@@ -17,7 +16,6 @@ export class CartResponseDto {
     return new CartResponseDto(
       props.id,
       props.userId,
-      props.date,
       props.products,
     );
   }

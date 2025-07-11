@@ -1,4 +1,4 @@
-import { Cart, CartProduct } from '../entities/cart.entitie';
+import { Cart } from '../entities/cart.entitie';
 import { CartResponseDto } from '../dtos/cart-response.dto';
 
 export class CartMapper {
@@ -6,7 +6,6 @@ export class CartMapper {
     return new CartResponseDto(
       cart.id,
       cart.userId,
-      cart.date,
       cart.products
     );
   }
