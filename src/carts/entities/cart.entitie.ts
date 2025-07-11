@@ -30,7 +30,6 @@ export class Cart {
   static create(props: {
     id: number;
     userId: number;
-    date: string;
     products: Product[];
   }) {
     return new Cart(

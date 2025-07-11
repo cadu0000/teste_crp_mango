@@ -20,7 +20,6 @@ export class CartRepository implements ICartRepository {
         const cart = Cart.create({
           id: data.id,
           userId: data.userId,
-          date: data.date,
           products: data.products,
         });
 
