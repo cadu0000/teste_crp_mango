@@ -2,7 +2,7 @@ import { UserResponseDto } from "../dtos/user-response.dto";
 import { User } from "../entities/user.entitie";
 import { UserMapper } from "../mappers/user.mapper";
 import { PaginatedResponse } from "../../commons/dtos/pagination.dto";
-import { PaginationRequestDto } from "../../commons/dtos/products-request.dto";
+import { PaginationRequestDto } from "../../commons/dtos/pagination-request.dto";
 import { IUsersRepository } from "../interfaces/user-repository.interface";
 
 export class UsersRepository implements IUsersRepository {

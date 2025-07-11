@@ -1,6 +1,6 @@
 import express from 'express';
 import { UsersService } from "./users.service";
-import { PaginationRequestDto } from '../commons/dtos/products-request.dto';
+import { PaginationRequestDto } from '../commons/dtos/pagination-request.dto';
 
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}

@@ -1,7 +1,7 @@
 import express from 'express';
 import { CartServices } from './cart.service';
 import { CartRequestDto } from './dtos/cart-request.dto';
-import { PaginationRequestDto } from '../commons/dtos/products-request.dto';
+import { PaginationRequestDto } from '../commons/dtos/pagination-request.dto';
 
 export class CartController {
   constructor(private readonly cartServices: CartServices) {}

@@ -1,5 +1,5 @@
 import { PaginatedResponse } from "../../commons/dtos/pagination.dto";
-import { PaginationRequestDto } from "../../commons/dtos/products-request.dto";
+import { PaginationRequestDto } from "../../commons/dtos/pagination-request.dto";
 import { UserResponseDto } from "../dtos/user-response.dto";
 
 export interface IUsersRepository {

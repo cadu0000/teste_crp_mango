@@ -1,4 +1,4 @@
-import { PaginationRequestDto } from "../commons/dtos/products-request.dto";
+import { PaginationRequestDto } from "../commons/dtos/pagination-request.dto";
 import { IProductsRepository } from "../products/interfaces/products-repository.interface";
 import { IUsersRepository } from "../users/interfaces/user-repository.interface";
 import { CartRequestDto } from "./dtos/cart-request.dto";
