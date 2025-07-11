@@ -1,13 +1,13 @@
 import express from 'express';
-import { ProductsServices } from './products.services';
-import { ProductsRequestDto } from './dtos/products-request.dto';
+import { ProductsServices } from './products.service';
+import { PaginationRequestDto } from '../commons/dtos/products-request.dto';
 
 export class ProductsController {
   constructor(private readonly productsServices: ProductsServices) {}
 
   async getProducts(req: express.Request, res: express.Response): Promise<express.Response> {
     try {
-      const request = ProductsRequestDto.fromQuery(req.query);
+      const request = PaginationRequestDto.fromQuery(req.query);
       const response = await this.productsServices.getProducts(request);
       
       return res.status(200).json({
