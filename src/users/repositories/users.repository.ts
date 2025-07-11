@@ -16,6 +16,9 @@ export class UsersRepository implements IUsersRepository {
       if (request.sort) {
         queryParams.append('sort', request.sort);
       }
+      if (request.offset) {
+        queryParams.append('offset', request.offset.toString());
+      }
       
       const queryString = queryParams.toString();
       const url = queryString ? `https://fakestoreapi.com/users?${queryString}` : 'https://fakestoreapi.com/users';
