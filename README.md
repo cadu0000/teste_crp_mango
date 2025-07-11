@@ -42,7 +42,7 @@ $ docker run -p 3333:3333 fake-store-api
   - Payload: (Perceba que na documentação está o id, mas não faz sentido o enviar, até porque ele será criado apenas após o POST)
     ```json
     {
-      "userId": 1,
+      "userId": integer,
       "products": Product[]
     }
     ```
@@ -53,7 +53,7 @@ $ docker run -p 3333:3333 fake-store-api
   - Payload
     ```json
     {
-      "userId": 1,
+      "userId": integer,
       "products": Product[]
     }
     ```
